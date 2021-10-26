@@ -1,0 +1,59 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.upgrade{
+    position: fixed;
+    height: 100px;
+    background-color: salmon;
+    width: 80%;
+    top: 0;
+    right: 0;
+}
+main{
+    display: flex;
+}
+.main-nav{
+    width: 20%;
+    height: calc(100vh - 100px);
+    background-color: chocolate;
+}
+
+.main-content{
+    padding-top: 100px;
+    width: 80%;
+    height: calc(100vh - 100px);
+    background-color: rebeccapurple;
+    overflow-y: auto;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: sienna;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
