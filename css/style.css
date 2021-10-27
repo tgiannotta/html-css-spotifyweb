@@ -112,14 +112,12 @@ main{
     font-size: 25px;
     padding-right: 10px;
 }
-
-.app i{
-    padding-right: 10px;
+.line-4{
+    width: 85%;
+    margin: auto;
+    height: 2px;
+    background-color: white;
 }
-.app{
-    border-bottom: 1px solid white;
-}
-
 /* MAIN-CONTENT */
 .main-content{
     padding: 100px 50px 50px 50px;
@@ -157,6 +155,7 @@ main{
     flex-wrap: wrap;
     text-align: center;
 }
+
 .img-content img, .preferiti img{
     width: 200px;
     height: 200px;
