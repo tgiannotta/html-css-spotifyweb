@@ -7,54 +7,175 @@
 /* COMMON */
 body{
     font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+img{
+    width: 100%;
+}
+.dis-none{
+    display: none;
+}
+.pad-10-20{
+    padding: 10px 20px;
+
+}
+.col-white{
+    color: white;
+}
+
+.style-text-grey{
+    font-weight: 800;
+    color: #717171;
 }
 /* UPGRADE FIXED */
 .upgrade{
     position: fixed;
-    height: 100px;
-    background-color: salmon;
-    width: 85%;
+    height: 80px;
+    width: calc(100% - 250px);
     top: 0;
     right: 0;
     text-align: right;
     background-color: #080b12;
-    line-height: 100px;
+    line-height: 80px;
 }
+
 .upgrade a{
     text-decoration: none;
     color: white;
-    padding: 15px 20px;
+    padding: 12px 20px;
     border: 1px solid white;
     text-transform: uppercase;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-
+/* MAIN */
 }
 main{
     display: flex;
+    overflow: hidden;
 }
+/* MAIN-NAV */
 .main-nav{
-    width: 15%;
-    height: calc(100vh - 100px);
-    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: calc(100vh - 80px);
+    background-color: #000000;
+}
+.main-nav img{
+    width: 265px;
+    padding: 20px;
+}
+/* LISTA LINK MENU SX */
+.lista-link-principali li{
+    padding: 10px 20px;
+    font-size: 20px;   
+}
+.playlist{
+    overflow: hidden;
+    flex-grow: 1;
+}
+.playlist h3{
+    text-transform: uppercase;
+}
+.playlist i{
+    font-size: 30px;
+    padding: 13px;
+    background-color: #a3a3a3;
+    color: black;
+}
+.lista-playlist{
+    list-style-type: none;
+    overflow-y: auto;
+    height: 80%;
+}
+.lista-playlist li{
+    padding-bottom: 15px;
+}
+.user-icon i{
+    font-size: 25px;
+    padding-right: 10px;
 }
 
+.app i{
+    padding-right: 10px;
+}
+.app{
+    border-bottom: 1px solid white;
+}
+/* MAIN-CONTENT */
 .main-content{
     padding-top: 100px;
-    width: 85%;
-    height: calc(100vh - 100px);
-    background-color: rebeccapurple;
+    width: calc(100% - 250px);
+    height: calc(100vh - 80px);
+    background-color: #141922;
     overflow-y: auto;
 }
+.nav-content ul{
+    display: flex;
+    justify-content: center;
+}
+.lista-main li{
+    list-style-type: none;
+}
+.lista-main li a{
+    text-decoration: none;
+    color: #717171;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
 
+}
 footer{
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: sienna;
 }
+@media screen and (max-width: 700px){
+}
+@media screen and (max-width: 600px) {
+    .upgrade{
+        width: 90%;
+    }
+    .main-content{
+        width: 90%;
+    }
+    .main-nav{
+        width: 10%;
+    }
+    .main-nav .logo-std, .playlist{
+        display: none;       
+    } 
+    .main-nav .logo-small{
+        display: block;
+        width: 110%;
+        padding: 15px;
+       
+    }
+    .nav-icon-text{
+        display: none;
+    }
+    ul li{
+        padding: 15px;
 
-
+    }
+    .main-nav ul li i{
+        font-size: 30px;  
+    }
+    .app{
+        border-bottom: none;
+    }
+    .user{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .install, .user-name{
+        display: none;
+        
+    }
+    
+}
 
 
 
